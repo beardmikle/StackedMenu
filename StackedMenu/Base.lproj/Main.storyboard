@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackedMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cne-j7-jeG">
+                                <rect key="frame" x="-60" y="-126" width="492" height="840"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cne-j7-jeG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="39" id="3Ia-Kp-qgl"/>
+                            <constraint firstItem="cne-j7-jeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-60" id="6Gn-k1-U6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="cne-j7-jeG" secondAttribute="top" constant="185" id="vmB-Nu-NZ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cne-j7-jeG" secondAttribute="bottom" constant="104" id="wef-nU-fkx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
+        </scene>
+        <!--Stack Element View Controller-->
+        <scene sceneID="z7M-wa-fbV">
+            <objects>
+                <viewController storyboardIdentifier="StackElement" id="Gjm-hD-2jY" customClass="StackElementViewController" customModule="StackedMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LqR-h1-ZDC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="US0-9A-LFj">
+                                <rect key="frame" x="30" y="72" width="347" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c4B-Jw-zMT">
+                                <rect key="frame" x="30" y="109" width="336" height="486"/>
+                                <color key="backgroundColor" red="0.35332260500000001" green="0.52475705709999998" blue="0.83877513020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="Vcv-55-zjp"/>
+                                    <constraint firstAttribute="height" constant="486" id="fd2-56-1Po"/>
+                                </constraints>
+                                <string key="text">Design of buildings and structures Design of buildings and structures includes several stages:
+1. Analysis of technical conditions for the design of the object.
+2. Project development.
+3. Coordination of project documentation with the customer, state services, supervisory authorities.
+4. Approval of the project.
+5. Obtaining a construction permit.
+6. Construction of the facility (if necessary).
+7. Approval of executive documentation.
+8. Approval of working documentation in the supervisory authorities.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BKQ-sc-bvo"/>
+                        <color key="backgroundColor" red="0.35332260497891016" green="0.52475705707644316" blue="0.8387751302262626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="US0-9A-LFj" firstAttribute="leading" secondItem="c4B-Jw-zMT" secondAttribute="leading" id="ap2-Ye-y2G"/>
+                            <constraint firstItem="c4B-Jw-zMT" firstAttribute="leading" secondItem="BKQ-sc-bvo" secondAttribute="leading" constant="30" id="e8c-3M-SSV"/>
+                            <constraint firstItem="US0-9A-LFj" firstAttribute="top" secondItem="BKQ-sc-bvo" secondAttribute="top" constant="13" id="ezH-Pu-IZg"/>
+                            <constraint firstItem="US0-9A-LFj" firstAttribute="trailing" secondItem="LqR-h1-ZDC" secondAttribute="trailingMargin" id="fSn-SW-CX8"/>
+                            <constraint firstItem="c4B-Jw-zMT" firstAttribute="top" secondItem="BKQ-sc-bvo" secondAttribute="top" constant="50" id="gSb-wm-cWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="US0-9A-LFj" id="wZw-VM-A4N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa2-QT-V2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838.93129770992368" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="3364" height="4774"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
